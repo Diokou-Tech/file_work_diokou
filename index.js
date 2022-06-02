@@ -2,8 +2,8 @@ var fs = require('fs');
 
 var walk = function(dir)
 {
-    var results = [];
-    var list = fs.readdirSync(dir);
+    let results = [];
+    let list = fs.readdirSync(dir);
     list.forEach(function(file) {
         file = dir + '/' + file;
         var stat = fs.statSync(file);
